@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  background: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.card-container{
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+h1{
+  width: 250px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2;
+}
+
+h1 span{
+  color: skyblue;
+}
+
+h1 span.material-icons{
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card{
+  width: 300px;
+  height: 550px;
+  padding: 15px;
+  margin: 20px 0;
+  background: #c2dcbd64;
+  backdrop-filter: blur(4px);
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card .thumbnail{
+  width: 250px;
+  height: 350px;
+  margin: auto;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .thumbnail .heart{
+  position: absolute;
+  background-color: skyblue;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card .thumbnail .heart span{
+  font-size: 1rem;
+}
+
+.card .info{
+  text-align: center;
+}
+.card .info h2{
+  font-size: 1rem;
+  margin-top: 15px;
+}
+.card .info .rating span{
+  color: #f4a108;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0 -1px;
+}
+
+.card .info .rating span.none{
+  color: #c0974a;
+}
+.card .info p{
+  color: #e9e9e9;
+  font-size: 0.5rem;
+  width: 250Px;
+  margin: auto;
+}
+
+.card .follow{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: linear-gradient(180deg, #2B1f16 50%, transparent 50%);
+  padding: 8px;
+  border-radius: 50%;
+}
+.card .follow button{
+  all: unset;
+  background: skyblue;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.card .follow button span{
+  font-size: 3rem;
+  color: white;
+}
+
+.card .follow button:hover span{
+  animation: rotateP 0.2s ease-in-out;
+}
+
+@keyframes rotateP{
+  to{
+    transform: rotate(90deg);
+  }
+}

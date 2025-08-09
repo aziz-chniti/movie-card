@@ -77,6 +77,9 @@ Feel free to **fork the repo**, make your changes, and submit a pull request.
 
 This project was explained in detail on YouTube step by step.  
 👉 **Link:** [Watch Now](https://youtu.be/kxfiuv5R1xs)
+---
+📘 **Get my Frontend Developement eBook:**
+👉 https://barmajli.gumroad.com/l/iiflx
 
 ## 📬 Contact
 
